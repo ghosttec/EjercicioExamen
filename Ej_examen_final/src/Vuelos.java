@@ -1,6 +1,13 @@
 import java.util.Date;
 
 
+/**
+ * Esta clase lleva los vuelos realizados por la compañia por APALAPUCIA!!!
+ * @author rossolad
+ * @version 1.0
+ * @see Hotel
+ * @see Sucursal
+ */
 public class Vuelos {
 
 	private int numeroVuelo;
@@ -11,6 +18,26 @@ public class Vuelos {
 	private int plazasTuris;
 	
 	
+	/**
+	 * Este es el constructor de los vuelos para tener toda su informacion
+	 * @param numeroVuelo Este es el numero de vuelo señalando el vuelo que ha cogido
+	 * @param fechaVuelo Fecha en la que partio el vuelo
+	 * @param origen Lugar de salida del vuelo
+	 * @param destino Lugar de llegada del vuelo
+	 * @param plazasTotal Numero de plazas total que tiene
+	 * @param plazasTuris Numero de plazas para turistas
+	 * @since 1.0
+	 */
+	public Vuelos(int numeroVuelo, Date fechaVuelo, String origen,
+			String destino, int plazasTotal, int plazasTuris) {
+		super();
+		this.numeroVuelo = numeroVuelo;
+		this.fechaVuelo = fechaVuelo;
+		this.origen = origen;
+		this.destino = destino;
+		this.plazasTotal = plazasTotal;
+		this.plazasTuris = plazasTuris;
+	}
 	public int getNumeroVuelo() {
 		return numeroVuelo;
 	}
